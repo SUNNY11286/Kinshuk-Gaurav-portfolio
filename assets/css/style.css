@@ -2631,6 +2631,55 @@ body.loaded {
     height: 50px;
 }
 
+.brands .button {
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px 35px;
+    width: 100%;
+    background: transparent;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.brands .button .text {
+    position: relative;
+    z-index: 4;
+}
+
+.brands .button:hover {
+    color: #1d1d1d;
+}
+
+
+.brands .button:hover:after {
+    width: 100%;
+    color: #0c0c0c;
+}
+
+.brands .button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--maincolor);
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
 /* Resume
 -----------------------------------------------------------------*/
 
@@ -3865,6 +3914,74 @@ body.loaded {
 
 .price .item .butn span {
     white-space: nowrap;
+}
+
+
+/* .price .button {
+    margin-top: 50px;
+    background-color: #22af3230;
+    border: none;
+    color: rgb(245, 242, 242);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+} */
+
+/* .price .button:hover {
+    background-color: #f1f1f1;
+} */
+
+.price .button {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px 35px;
+    width: 100%;
+    background: transparent;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.price .button .text {
+    position: relative;
+    z-index: 4;
+}
+
+.price .button:hover {
+    color: #1d1d1d;
+}
+
+
+.price .button:hover:after {
+    width: 100%;
+    color: #0c0c0c;
+}
+
+.price .button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--maincolor);
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
 }
 
 /* Process
