@@ -2566,20 +2566,69 @@ body.loaded {
 /* Brands
 -----------------------------------------------------------------*/
 
-.brands h6 {
-    font-size: 14px;
+.brands h4 {
+    /* font-size: 14px; */
     display: inline-block;
     padding: 12px 30px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 30px;
+    border-color: #0dda54;
 }
+
+.brands .item .count-box {
+    /* position: center; */
+    /* background-color: #28e98c; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .brands .item .count-box .h4 {
+    font-size:x-small;
+} */
+
+.brands {
+    background-color: #0f35126e;
+}
+
+/* .brands .sub-title-icon {
+    background-color: #06a6566d;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+} */
 
 .brands .item {
     margin-top: 60px;
 }
 
+
 .brands .item .img {
     margin: auto;
+    margin-bottom: 12px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* border-radius: 50px;
+    background: #28e98c;
+    display: inline-flex; */
+}
+
+.brands .item .img i {
+    /* position: absolute; */
+    /* top: -25px;
+    left: 50%;
+    transform: translateX(-50%); */
+    font-size: 24px;
+    background: #0dda54;
+    /* color: #1bc651; */
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
 }
 
 /* Resume
