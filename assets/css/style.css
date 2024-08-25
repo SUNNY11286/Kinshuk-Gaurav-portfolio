@@ -2028,6 +2028,10 @@ body.loaded {
     object-position: center;
 }
 
+.about .sub-title-icon {
+    background-color: #06a6566d;
+}
+
 .about .info {
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -2061,6 +2065,10 @@ body.loaded {
 .blog .item .img {
     border-radius: 10px;
     overflow: hidden;
+}
+
+.blog .sub-title-icon {
+    background-color: #06a6566d;
 }
 
 .blog .item .cont {
@@ -2605,6 +2613,7 @@ body.loaded {
     border-bottom: 1px solid #3d3d3d;
 }
 
+
 .resume .items h5,
 .resume .item h5 {
     font-size: 22px;
@@ -2627,6 +2636,10 @@ body.loaded {
 
 .resume2 .resume-clumn {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resume2 .sub-title-icon {
+    background-color: #06a6566d;
 }
 
 .resume2 .items {
@@ -2662,6 +2675,15 @@ body.loaded {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 12px;
+}
+
+.resume2 .items .date {
+    /* background-color: #06a6566d; */
+    border-color: #06a6566d;
+}
+
+.skills .sub-title-icon {
+    background-color: #06a6566d;
 }
 
 .skills .item {
@@ -3539,6 +3561,10 @@ body.loaded {
     margin-right: -15px;
 }
 
+.portfolio .sub-title-icon {
+    background-color: #06a6566d;
+}
+
 .portfolio .items {
     margin-top: 40px;
 }
@@ -3722,6 +3748,10 @@ body.loaded {
     border-radius: 30px;
 }
 
+.price .sub-title-icon {
+    background-color: #06a6566d;
+}
+
 .price .item:before {
     content: '';
     position: absolute;
@@ -3800,6 +3830,10 @@ body.loaded {
     border-radius: 10px;
 }
 
+.services .sub-title-icon {
+    background-color: #06a6566d;
+}
+
 .services .item.bord {
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: transparent;
@@ -3874,6 +3908,10 @@ body.loaded {
 
 .testimonials .swiper-slide {
     padding: 10px;
+}
+
+.testimonials .sub-title-icon {
+    background-color: #06a6566d;
 }
 
 .testimonials .item {
@@ -3994,6 +4032,10 @@ body.loaded {
     border-radius: 10px;
     position: relative;
     background: #0c0c0c;
+}
+
+.contact .sub-title-icon {
+    background-color: #06a6566d;
 }
 
 .contact .info .item:before {
