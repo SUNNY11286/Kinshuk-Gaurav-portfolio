@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/css/glightbox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+
+</head>
+
+<body>
+
+    <!-- Simple image -->
+    <a href="data_science_doman.html" class="glightbox">
+        <img src="https://lenadesign.org/wp-content/uploads/2021/11/christmas-card.png" alt="image" />
+    </a>
+
+    <!-- Video -->
+
+    <!-- Gallery -->
+    <a href="data_science_doman.html" class="glightbox3" data-gallery="gallery1">
+        <img src="https://lenadesign.org/wp-content/uploads/2021/11/christmas-card.png" alt="image" />
+    </a>
+    <a href="data_science_doman.html" class="glightbox3" data-gallery="gallery1">
+        <img src="https://lenadesign.org/wp-content/uploads/2021/11/christmas-card.png" alt="image" />
+    </a>
+
+    <!-- Simple Description -->
+    <a href="data_science_doman.html" class="glightbox4"
+        data-glightbox="title: My title; description: this is the slide description">
+        <img src="https://lenadesign.org/wp-content/uploads/2021/11/christmas-card.png" alt="image" />
+    </a>
+
+    <!-- Advanced Description -->
+    <a href="data_science_doman.html" class="glightbox5" data-glightbox="title: My title; description: .custom-desc1">
+        <img src="https://lenadesign.org/wp-content/uploads/2021/11/christmas-card.png" alt="image" />
+    </a>
+
+    <div class="glightbox-desc custom-desc1">
+        <p>The content of this div will be used as the slide description</p>
+        <p>You can add links and any HTML you want</p>
+    </div>
+
+    <!-- URL with no extension -->
+    <a href="https://picsum.photos/1200/800" data-glightbox="type: image">
+        <img src="https://lenadesign.org/wp-content/uploads/2021/11/christmas-card.png" alt="image" />
+    </a>
+    <!-- OR using multiple data attributes -->
+    <a href="https://picsum.photos/1200/800" data-type="image">
+        <img src="https://lenadesign.org/wp-content/uploads/2021/11/christmas-card.png" alt="image" />
+    </a>
+
+    <!-- Using responsive images: specify sizes and srcset through data attributes in the
+     same way you would with the img tag.
+     See: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+    <a href="assets/imgs/header/icon2.png" class="glightbox6" data-title="Responsive example"
+        data-description="Your browser will choose the optimal image for the resolution"
+        data-sizes="(max-width: 600px) 480px, 800px" data-srcset="img480.jpg 480w, img800.jpg 800w">
+        <img src="https://lenadesign.org/wp-content/uploads/2021/11/christmas-card.png" alt="image" />
+    </a>
+
+
+    <div class="inner">
+        <a href="assets/imgs/header/icon1.png" class="glightbox">
+            <img src="assets/imgs/header/icon1.png" alt="image" />
+        </a>
+    </div>
+
+    <script src="dist/js/glightbox.js"></script>
+    <script>
+        var lightbox = GLightbox();
+        lightbox.on('open', (target) => {
+            console.log('lightbox opened');
+        });
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2'
+        });
+        var lightboxVideo = GLightbox({
+            selector: '.glightbox3'
+        });
+        lightboxVideo.on('slide_changed', ({ prev, current }) => {
+            console.log('Prev slide', prev);
+            console.log('Current slide', current);
+
+            const { slideIndex, slideNode, slideConfig, player } = current;
+
+            if (player) {
+                if (!player.ready) {
+                    // If player is not ready
+                    player.on('ready', (event) => {
+                        // Do something when video is ready
+                    });
+                }
+
+                player.on('play', (event) => {
+                    console.log('Started play');
+                });
+
+                player.on('volumechange', (event) => {
+                    console.log('Volume change');
+                });
+
+                player.on('ended', (event) => {
+                    console.log('Video ended');
+                });
+            }
+        });
+
+        var lightboxInlineIframe = GLightbox({
+            selector: '.glightbox4'
+        });
+
+        /* var exampleApi = GLightbox({ selector: null });
+        exampleApi.insertSlide({
+            href: 'https://picsum.photos/1200/800',
+        });
+        exampleApi.insertSlide({
+            width: '500px',
+            content: '<p>Example</p>'
+        });
+        exampleApi.insertSlide({
+            href: 'https://www.youtube.com/watch?v=WzqrwPhXmew',
+        });
+        exampleApi.insertSlide({
+            width: '200vw',
+            content: document.getElementById('inline-example')
+        });
+        exampleApi.open(); */
+    </script>
+
+
+
+</body>
+
+</html>

@@ -30,6 +30,10 @@
     <!-- Core Style Css -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- glight box -->
+    <link rel="stylesheet" href="dist/css/glightbox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
 </head>
 
 <body>
@@ -466,7 +470,7 @@
                                             <div class="d-flex align-items-center mb-30">
                                                 <div class="mr-30">
                                                     <div class="img icon-img-40">
-                                                        <img src="assets/imgs/resume/s1.png" alt="">
+                                                        <img src="assets/imgs/resume/powerbi.png" alt="">
                                                     </div>
                                                 </div>
                                                 <div>
@@ -484,11 +488,31 @@
                                             <div class="d-flex align-items-center mb-30">
                                                 <div class="mr-30">
                                                     <div class="img icon-img-40">
-                                                        <img src="assets/imgs/resume/s2.png" alt="">
+                                                        <img src="   https://cdn-icons-png.flaticon.com/512/10397/10397103.png"
+                                                            alt="">
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <h6 class="fz-18">Development</h6>
+                                                    <h6 class="fz-18">Data Visualizations</h6>
+                                                </div>
+                                            </div>
+                                            <div class="skill-progress">
+                                                <span class="progres" data-value="95%"></span>
+                                            </div>
+                                            <span class="value">95%</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="item mb-30">
+                                            <div class="d-flex align-items-center mb-30">
+                                                <div class="mr-30">
+                                                    <div class="img icon-img-40">
+                                                        <img src="https://cdn-icons-png.flaticon.com/512/9423/9423110.png"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 class="fz-18">Image Processing</h6>
                                                 </div>
                                             </div>
                                             <div class="skill-progress">
@@ -502,17 +526,18 @@
                                             <div class="d-flex align-items-center mb-30">
                                                 <div class="mr-30">
                                                     <div class="img icon-img-40">
-                                                        <img src="assets/imgs/resume/s3.png" alt="">
+                                                        <img src="https://avatars.githubusercontent.com/u/15658638?s=200&v=4"
+                                                            alt="">
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <h6 class="fz-18">Graphic Design</h6>
+                                                    <h6 class="fz-18">Tensorflow</h6>
                                                 </div>
                                             </div>
                                             <div class="skill-progress">
-                                                <span class="progres" data-value="85%"></span>
+                                                <span class="progres" data-value="75%"></span>
                                             </div>
-                                            <span class="value">85%</span>
+                                            <span class="value">75%</span>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -520,11 +545,11 @@
                                             <div class="d-flex align-items-center mb-30">
                                                 <div class="mr-30">
                                                     <div class="img icon-img-40">
-                                                        <img src="assets/imgs/resume/s5.png" alt="">
+                                                        <img src="assets/imgs/resume/python.png" alt="">
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <h6 class="fz-18">sketch</h6>
+                                                    <h6 class="fz-18">Python</h6>
                                                 </div>
                                             </div>
                                             <div class="skill-progress">
@@ -533,8 +558,49 @@
                                             <span class="value">80%</span>
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="inner">
+                                            <div class="item mb-30">
+
+                                                <a href="data_science_doman.html" data-glightbox="type: external"
+                                                    title="Portfolio Details" class="glightbox">
+                                                    <span>
+                                                        <div class=" d-flex align-items-center mb-30">
+                                                            <div class="mr-30">
+                                                                <div class="img icon-img-40">
+                                                                    <img src="https://cdn-icons-png.flaticon.com/512/3696/3696638.png"
+                                                                        alt="">
+                                                                    <!-- src=" https://cdn-icons-png.flaticon.com/512/3080/3080443.png " -->
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h6 class="fz-18">Others</h6>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </a>
+
+                                                <div class="skill-progress">
+                                                    <span class="progres" data-value="95%"></span>
+                                                </div>
+                                                <span class="value">95%</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- <img id="myImg" src="assets/imgs/resume/powerbi.png" alt="Snow"
+                                style="width:100%;max-width:300px"> -->
+
+                            <!-- The Modal -->
+                            <!-- <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <p>this is image</p>
+                                <div id="caption"></div>
+                            </div> -->
+
                             <div class="resume2 wow fadeIn">
                                 <div class="sec-head mb-50">
                                     <div class="sub-title-icon d-flex align-items-center">
@@ -1414,6 +1480,72 @@
 
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>
+
+
+    <!-- glight box -->
+
+    <script src="dist/js/glightbox.js"></script>
+    <script>
+        var lightbox = GLightbox();
+        lightbox.on('open', (target) => {
+            console.log('lightbox opened');
+        });
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2'
+        });
+        var lightboxVideo = GLightbox({
+            selector: '.glightbox3'
+        });
+        lightboxVideo.on('slide_changed', ({ prev, current }) => {
+            console.log('Prev slide', prev);
+            console.log('Current slide', current);
+
+            const { slideIndex, slideNode, slideConfig, player } = current;
+
+            if (player) {
+                if (!player.ready) {
+                    // If player is not ready
+                    player.on('ready', (event) => {
+                        // Do something when video is ready
+                    });
+                }
+
+                player.on('play', (event) => {
+                    console.log('Started play');
+                });
+
+                player.on('volumechange', (event) => {
+                    console.log('Volume change');
+                });
+
+                player.on('ended', (event) => {
+                    console.log('Video ended');
+                });
+            }
+        });
+
+        var lightboxInlineIframe = GLightbox({
+            selector: '.glightbox4'
+        });
+
+        /* var exampleApi = GLightbox({ selector: null });
+        exampleApi.insertSlide({
+            href: 'https://picsum.photos/1200/800',
+        });
+        exampleApi.insertSlide({
+            width: '500px',
+            content: '<p>Example</p>'
+        });
+        exampleApi.insertSlide({
+            href: 'https://www.youtube.com/watch?v=WzqrwPhXmew',
+        });
+        exampleApi.insertSlide({
+            width: '200vw',
+            content: document.getElementById('inline-example')
+        });
+        exampleApi.open(); */
+    </script>
+
 
 </body>
 
