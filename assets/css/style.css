@@ -2735,12 +2735,13 @@ body.loaded {
 /* .resume2 .resume_sec .li {
     color: red;
 } */
-li {
+
+.resume2 li {
     /* Default bullets style erased */
     list-style: none;
 }
 
-li::before {
+.resume2 li::before {
 
     /* Unicode for a bullet */
     content: "\2022";
@@ -2751,7 +2752,14 @@ li::before {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+    /* letter-spacing: 10px;
+    font-size: 12px; */
 }
+
+/* .resume2 .items .list-text {
+    letter-spacing: 1px;
+    font-size: 12px;
+} */
 
 /* .resume2 .resume_sec .items .p {
     text-align: justify;
