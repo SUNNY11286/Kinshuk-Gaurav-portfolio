@@ -37,7 +37,7 @@
   23. portfolio CSS START
   24. Publication CSS START
   25. process CSS START
-  26. services CSS START
+  26. work_domain CSS START
   27. slider CSS START
   28. team CSS START
   29. testimonials CSS START
@@ -3987,35 +3987,63 @@ body.loaded {
 /* Process
 -----------------------------------------------------------------*/
 
-/* Services
+/* work_domain
 -----------------------------------------------------------------*/
 
-.services .item {
+/* .work_domain .container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border: 5px solid violet;
+    background: #ccc;
+} */
+
+.work_domain .item {
     padding: 50px 30px;
     position: relative;
     border-radius: 10px;
+    height: 20em;
+    /* margin-bottom: 10%; */
+    /* display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px; */
+    /* transition: all 0.4s; */
+    /* width: 25em; */
+    /* border: 5px solid black; */
+    /* background: #fff */
 }
 
-.services .sub-title-icon {
+.work_domain .sub-title-icon {
     background-color: #06a6566d;
 }
 
-.services .item.bord {
+.work_domain .item.bord {
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: transparent;
 }
 
-.services .item.bord:before,
-.services .item.bord:after {
+.work_domain .item.bord:before,
+.work_domain .item.bord:after {
     display: none;
 }
 
-.services .item .cont {
+.work_domain .item .cont {
     position: relative;
     z-index: 3;
+    text-align: justify;
+    flex-wrap: wrap;
 }
 
-.services .item:before {
+
+/* .work_domain .item .cont .p {
+    text-align: center;
+} */
+
+.work_domain .item:before {
     content: '';
     position: absolute;
     top: 0;
@@ -4027,7 +4055,7 @@ body.loaded {
     border-radius: 10px;
 }
 
-.services .item:after {
+.work_domain .item:after {
     content: '';
     position: absolute;
     top: -1px;
@@ -4042,11 +4070,11 @@ body.loaded {
     border-radius: 10px;
 }
 
-.services.serv2 .item {
+.work_domain.serv2 .item {
     background-color: #0c0c0c;
 }
 
-.services.serv2 .item:before {
+.work_domain.serv2 .item:before {
     background: -webkit-linear-gradient(330deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.04));
     background: -o-linear-gradient(330deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.04));
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.04));
