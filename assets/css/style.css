@@ -35,7 +35,7 @@
   21. header CSS START
   22. hero CSS START
   23. portfolio CSS START
-  24. price CSS START
+  24. Publication CSS START
   25. process CSS START
   26. services CSS START
   27. slider CSS START
@@ -3839,18 +3839,18 @@ body.loaded {
 /* Pricing
 -----------------------------------------------------------------*/
 
-.price .item {
+.Publication .item {
     padding: 60px 30px 40px;
     position: relative;
     background-color: #0c0c0c;
     border-radius: 30px;
 }
 
-.price .sub-title-icon {
+.Publication .sub-title-icon {
     background-color: #06a6566d;
 }
 
-.price .item:before {
+.Publication .item:before {
     content: '';
     position: absolute;
     left: 0;
@@ -3866,7 +3866,7 @@ body.loaded {
     border-radius: 30px;
 }
 
-.price .item:after {
+.Publication .item:after {
     content: '';
     position: absolute;
     top: -1px;
@@ -3881,7 +3881,7 @@ body.loaded {
     border-radius: 30px;
 }
 
-.price .item .type {
+.Publication .item .type {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -3894,30 +3894,30 @@ body.loaded {
     border-radius: 30px;
 }
 
-.price .item .content .feat li {
+.Publication .item .content .feat li {
     margin-bottom: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.price .item .content .feat li i {
+.Publication .item .content .feat li i {
     font-size: 13px;
     color: #28e98c;
     margin-right: 10px;
     padding-top: 3px;
 }
 
-.price .item .butn {
+.Publication .item .butn {
     padding: 10px 25px;
 }
 
-.price .item .butn span {
+.Publication .item .butn span {
     white-space: nowrap;
 }
 
 
-/* .price .button {
+/* .Publication .button {
     margin-top: 50px;
     background-color: #22af3230;
     border: none;
@@ -3931,11 +3931,11 @@ body.loaded {
     border-radius: 16px;
 } */
 
-/* .price .button:hover {
+/* .Publication .button:hover {
     background-color: #f1f1f1;
 } */
 
-.price .button {
+.Publication .button {
     text-align: center;
     margin-top: 20px;
     padding: 15px 35px;
@@ -3956,22 +3956,22 @@ body.loaded {
     transition: all .4s;
 }
 
-.price .button .text {
+.Publication .button .text {
     position: relative;
     z-index: 4;
 }
 
-.price .button:hover {
+.Publication .button:hover {
     color: #1d1d1d;
 }
 
 
-.price .button:hover:after {
+.Publication .button:hover:after {
     width: 100%;
     color: #0c0c0c;
 }
 
-.price .button:after {
+.Publication .button:after {
     content: '';
     position: absolute;
     top: 0;
@@ -6413,11 +6413,11 @@ img.left {
         padding-left: 30px;
     }
 
-    .price .item .content {
+    .Publication .item .content {
         display: block !important;
     }
 
-    .price .item .content .mr-40 {
+    .Publication .item .content .mr-40 {
         margin-bottom: 40px !important;
     }
 
