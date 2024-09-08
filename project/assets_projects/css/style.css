@@ -1944,6 +1944,7 @@ ol {
 
     .info-box.about-client-box {
         margin-bottom: 24px;
+        /* margin-right: 100px; */
     }
 
     .section-heading {
