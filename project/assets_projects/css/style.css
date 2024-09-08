@@ -2279,6 +2279,40 @@ ol {
     }
 }
 
+.feature-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.feature-list li {
+    position: relative;
+    padding: 10px 15px 10px 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-list li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-list li::before {
+    content: "•";
+    position: absolute;
+    left: 10px;
+    color: #7792dd;
+    /* Gold color for bullet points */
+    font-size: 18px;
+    line-height: 1;
+}
+
 @media (max-width: 425px) {
     .about-area .about-me-box .infos h1 {
         font-size: 30px;
