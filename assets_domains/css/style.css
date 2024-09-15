@@ -13432,6 +13432,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .contact-form-v1 button.th-btn.w-100 {
+    transform: scale(0.5);
     padding: 23px 30px
 }
 
@@ -15711,6 +15712,23 @@ span.select2-selection.select2-selection--single:focus {
     margin-bottom: 30px;
     padding: 40px;
     border-radius: 20px
+}
+
+#portfolioModal .page-img img {
+    transform: scale(0.5);
+}
+@media (min-width: 768px) {
+    #portfolioModal .page-img img {
+        width: 50%;
+        /* Smaller screens get a reduced size */
+    }
+}
+
+@media (min-width: 1200px) {
+    #portfolioModal .page-img img {
+        width: 75%;
+        /* Larger screens might need a different size */
+    }
 }
 
 @media (max-width: 575px) {
